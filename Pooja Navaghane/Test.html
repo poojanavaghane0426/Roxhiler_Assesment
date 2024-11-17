@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <title>TV Control</title>
+    
+</head>
+<body>
+    <h1 class="head1">__Home Appliences__</h1>
+
+    
+    <div class="con1">
+    <div class="tv-screen" id="tvScreen">
+        
+        <video class="video" id="tvVideo" src="video\Samsung LED Giant 3D Billboard with in Gangnam, Seoul, Korea.mp4" controls></video>
+        
+    </div>
+
+    <div class="button-container">
+        <h1>TV</h1>
+        <button onclick="turnOn()">On</button>
+        <button onclick="turnOff()">Off</button>
+    </div>
+</div><br><br><br>
+
+      <!-- fan -->
+    <div class="con2">
+    <div class="fan-container">
+        
+
+     <img class="fan-img" src="./image/fan.avif" alt="" srcset="" id="fan"><br><br><br><br><br>
+     <h1>FAN</h1>
+     <button class="Off" onClick="off()">Off</button>
+     <button class="on" onClick="on()">1</button>
+     <button class="mid" onClick="mid()">2</button>
+     <button class="fast" onClick="fast()">3</button>
+    </div>
+</div>
+
+<!-- bulb -->
+ <section class="con3">
+ 
+<div class="container">
+    <!-- Lightbulb -->
+    <div id="lightbulb" class="lightbulb"></div>
+    <h1>BULB</h1>
+   
+    <div class="buttons">
+        <button id="turnOnButton" class="btn">Turn On</button>
+        <button id="turnOffButton" class="btn">Turn Off</button>
+        
+    </div>
+
+    <!-- Brightness control slider -->
+    <label for="brightnessSlider">Brightness:</label>
+    <input type="range" id="brightnessSlider" class="brightness-slider" min="0" max="100" value="100">
+   
+</div>
+</section>
+
+
+<!-- Ac -->
+<section class="con4">
+    <div class="ac-container">
+        <div class="ac-body">
+            <div class="ac-front">
+                <div class="ac-display">
+                    <p id="ac-status">AC OFF</p>
+                    <p id="ac-speed">Speed: 0</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ac-controls">
+            <button id="toggleAC">Turn On</button>
+            <button id="increaseSpeed" disabled>Increase Speed</button>
+            <button id="decreaseSpeed" disabled>Decrease Speed</button>
+           
+
+        </div>
+        <h1 style="margin-left:190px;">AC</h1>
+    </div>
+</section>
+
+
+    <script src="./Script.js">
+       
+    </script>
+
+</body>
+</html>
